@@ -18,7 +18,7 @@ Versi saat ini dari website ini adalah v1.0.0.
 
 ## Cara Mengakses
 
-Anda dapat mengakses website ini di [link_website_anda](https://link.website.anda).
+Anda dapat mengakses website ini di [Akses Disini](https://dahanlapuk.github.io/komafil/).
 
 ## Kontribusi
 
@@ -32,8 +32,8 @@ Website ini dilisensikan di bawah [lisensi_anda]. Untuk detail lebih lanjut, lih
 
 Jika Anda memiliki pertanyaan atau saran, jangan ragu untuk menghubungi kami di:
 
-- Email: [kontak@komafilui.com](mailto:kontak@komafilui.com)
+- Email: [kontak@komafilui.com](mailto:komafilfibui@gmail.com)
 - Twitter: [@komafilui](https://twitter.com/komafilui)
-- Instagram: [@komafilui](https://instagram.com/komafilui)
+- Instagram: [@komafilui](https://instagram.com/komafil.ui)
 
 Terima kasih telah mengunjungi website resmi Komafil. Semoga Anda menemukan informasi yang berguna di sini!
