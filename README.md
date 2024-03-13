@@ -1,6 +1,6 @@
 # Komafil Website
 
-![Komafil Logo](images/logo.png)
+![Komafil Logo](Asset/icon.png)
 
 Selamat datang di website resmi Komunitas Mahasiswa Filsafat Universitas Indonesia (Komafil UI)!
 
