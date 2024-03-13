@@ -26,7 +26,7 @@ Kami sangat menghargai kontribusi dari pengguna! Jika Anda ingin berkontribusi p
 
 ## Lisensi
 
-Website ini dilisensikan di bawah [lisensi_anda]. Untuk detail lebih lanjut, lihat file [LICENSE](LICENSE).
+Website ini dilisensikan di bawah [Universitas Indonesia]. Untuk detail lebih lanjut, lihat file [LICENSE](LICENSE).
 
 ## Kontak
 
