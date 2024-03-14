@@ -1,0 +1,95 @@
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color2);
+  color: var(--color1);
+}
+
+footer .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+footer img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+footer .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1440px;
+  padding: 1em 0;
+}
+
+footer .title-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .contact img {
+  width: 25px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .quote, footer .message {
+  line-height: 1.5;
+  padding: 0 2em;
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 15px;
+  color: var(--color2);
+}
+
+footer textarea {
+  width: 80%;
+  min-height: 80px;
+  text-wrap: wrap;
+  padding: 1em;
+}
+
+/* color */
+footer .black {
+  background-color:var(--color2) !important;
+}
+
+footer .gray {
+  background-color:var(--color3) !important;
+}
+
+footer .end {
+  background-color: var(--color4) !important;
+  color: var(--color2) !important;
+}
+
+footer .centerize {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+footer .end p {
+  text-align: center;
+  margin-block: 0 ;
+}

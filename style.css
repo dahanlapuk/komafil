@@ -1,499 +1,222 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
+:root {
+  --color1: #ececec;
+  --color2: #2b2b2b;
+  --color3: #8e8e8e;
+  --color4: #b0b0b0;
 }
 
-:root {
-  --color1: #EAE6DC;
-  --color2: #252C2D;
-  --color3: #64647C;
-  --color4: #646C79;
-
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color4) var(--color1);
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: var(--color2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* temporary */
+img {
+  width: 10px;
+  height: 10px;
+}
+
+/* banner */
+
+#banner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#banner {
+  position: relative;
+  /* background-image: url(/asset/welmab.JPG); */
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/asset/welmab.JPG');
+  background-position: center center;
+  background-size: cover; 
+  color: white;
+}
+
+#banner::after {
+  content: "";
+  background-color: var(--color3);
+  position: absolute;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#banner .quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+/* about us */
+
+#about-us {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#about-us {
+  position: relative;
+  /* background-image: url(/asset/welmab.JPG); */
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/asset/lac.JPG');
+  background-position: center center;
+  background-size: cover; 
+  color: white;
+}
+
+#about-us::after {
+  content: "";
+  background-color: var(--color3);
+  position: absolute;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#about-us p {
+  max-width: 720px !important;
+}
+
+#about-us .quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+
+/* card tagline */
+
+#tagline {
+  position: relative;
+  transform: translateY(-30px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#tagline h3 {
+  margin-block-start: 0.75em;
+  font-style: italic;
+}
+
+#tagline .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius:12px;
+  width: 1200px;
+  box-shadow: 0 2px 4px 0 #888888 ;
+  padding: 10px 35px;
   background-color: var(--color1);
 }
 
-nav {
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  justify-content: space-between;
-  align-items: center;
-  padding: 33px;
-  background-color: var(--color2);
-  color: var(--color1);
-}
-
-.konten-navbar {
-  position: relative;
-  padding-bottom: 6px;
-}
-
-nav img {
-  width: 64px;
-  position: absolute;
-  top: 5%;
-  left: 23.5%;
-  transform: translate(-50%, -50%);
-}
-
-.title-container {
-  position: absolute;
-  top: 5%;
-  left: 39%;
-  transform: translate(-50%, -50%);
-}
-
-.komafil-title {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--color1);
-}
-
-.ui-subtitle {
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--color1);
-}
-
-.hamburger {
-  display: block;
-  position: absolute;
-  top: 5%;
-  right: 24%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-
-/* Untuk memberi efek hover pada ikon menu */
-.hamburger:hover {
-  color: var(--color3);
-  transition: all 0.3s ease;
-}
-
-/* hero image */
-.hero-image {
-  background-image: url('asset/quotes-kierke-1.png');
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color2);
-}
-
-.quote-container {
-  text-align: start;
-  position: relative;
-  right: 90px;
-}
-
-.quote {
-  font-size: 28px;
-  margin: 0;
-}
-
-.author {
-  font-size: 18px;
-  margin: 0;
-}
-
-/* tagline */
-.tagline-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: -20px;
-}
-
-.tagline-box {
-  width: 600px;
-  height: 100px;
-  background-color: var(--color2);
-  color: var(--color1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  opacity: 70%;
-}
-
-.tagline-text {
-  font-size: 38px;
-  margin: 0;
-  color: var(--color1);
-}
-
-.tagline-label {
-  position: absolute;
-  font-weight: 700;
-  left: 300px;
-  font-size: 24px;
-  margin: 0;
-  color: var(--color2);
-}
-
-/* visi*/
-.visi-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: -15px;
-}
-
-.visi-box {
-  width: 600px;
-  height: 100px;
-  background-color: var(--color2);
-  color: var(--color1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  opacity: 70%;
-}
-
-.visi-text {
-  font-size: 14px;
-  font-style: oblique;
-  margin: 70px;
-  text-align: justify;
-  color: var(--color1);
-}
-
-.visi-label {
-  position: absolute;
-  font-weight: 700;
-  left: 317px;
-  font-size: 24px;
-  margin: 0;
-  color: var(--color2);
-}
-
-/* misi*/
-.misi-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: -10px;
-}
-
-.misi-box {
-  width: 600px;
-  height: 300px;
-  background-color: var(--color2);
-  color: var(--color1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  opacity: 70%;
-}
-
-.misi-label {
-  position: absolute;
-  font-weight: 700;
-  left: 317px;
-  font-size: 24px;
-  margin: 0;
-  color: var(--color2);
-}
-
-.misi-point {
-  font-size: 14px;
-  font-style: oblique;
-  margin: 70px;
-  text-align: justify;
-  color: var(--color1);
-}
-
-.misi-point a {
-  color: var(--color1);
-}
-
-/* tentang kami */
-.about-image {
-  background-image: url('asset/lac.JPG');
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color2);
-  opacity: 90%;
-}
-
-.about-container {
-  display: contents;
-  text-align: justify;
-  margin: 50px;
-  padding: 20%;
-  position: relative;
-}
-
-.class-about {
-  display: flex;
-
-}
-
-.about-text {
-  font-size: 16px;
-  font-style: oblique;
-  margin: 100px 330px 120px 280px;
-  padding: 1%;
-  text-align: justify;
-  color: var(--color1);
-  background-color: #252c2dbe;
-  opacity: 100%;
-  ;
-  border-radius: 7%;
-  position: relative;
-  right: 10px;
-  top: 15px;
-}
-
-.about-label {
-  display: flex;
-  font-weight: 700;
-  font-size: 26px;
-  font-style: oblique;
-  color: var(--color1);
-  position: relative;
-  top: -50px;
-  right: -290px;
-  background-color: #252c2dbe;
-  border-radius: 7%;
-  margin: 200px 30px 90px 60px;
-  padding: 1%;
-}
-
-/* struktur organisasi */
-.struktur {
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  position: relative;
-  left: 530px;
-}
-
-.organizational-structure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* ketua komafil  */
-.member {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.member-image img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-right: 20px;
-  position: relative;
-  top: 10px;
-  right: -10px;
-}
-
-
-.member-info h3 {
-  margin: 0;
-}
-
-.member-info p {
-  margin: 0;
-  color: #666;
-}
-
-/* wakil ketua  */
-.member-wakil {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-}
-
-.memberwakil-image img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-right: 10px;
-  transform: translate(200%);
-  position: relative;
-  left: 30px;
-}
-
-.memberwakil-info h3 {
-  margin: 0;
-  transform: translate(5%);
-}
-
-.memberwakil-info p {
-  margin: 0;
-  color: #666;
-  transform: translate(-50%);
-}
-
-
-/* wakil ketua  */
-.member-wakil2 {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-}
-
-.memberwakil2-image img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-right: 10px;
-  transform: translate(200%);
-  position: relative;
-  left: 30px;
-}
-
-.memberwakil2-info h3 {
-  margin: 0;
-  transform: translate(28%);
-}
-
-.memberwakil2-info p {
-  margin: 0;
-  color: #666;
-  transform: translate(-50%);
-}
-
-/* footer */
-.footer1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-  background-color: #171616;
-  color: #ffffff;
-}
-
-.footer-left img {
-  width: 55px;
-  position: relative;
-  top: 35px;
-  left: 40px;
-  transform: translate(-50%, -50%);
-}
-
-.footer-left h1 {
-  margin: 0;
-  font-size: small;
-  position: relative;
-  top: -20px;
-  left: 60px;
-}
-
-.footer-left h4 {
-  font-weight: 500;
-  margin: 0;
-  font-size: small;
-  position: relative;
-  top: -20px;
-  left: 60px;
-}
-
-.footer-right {
-  display: flex;
-}
-
-.footer-right a {
-  margin-right: 10px;
-}
-
-.footer-right img {
-  width: 30px;
-  height: auto;
-  background-color: #44444477;
-  border-radius: 5px;
-}
-
-/* footer2 */
-.footer2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #817C7C;
-  color: var(--color2);
-}
-
-.footer2-left p {
-  margin: 0;
-}
-
-
-.footer2-right .feedback-form {
-  display: flex;
-  align-items: center;
-}
-
-.footer2-right input[type="text"] {
-  width: 200px;
-  padding: 10px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 5px;
-}
-
-.footer2-right button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #ffffff;
-  color: #817C7C;
-  cursor: pointer;
-}
-
-
-.footer2-right button:hover {
-  background-color: #f0f0f0;
-}
-
-footer {
-  background-color: #BFB6B6;
-  padding: 2px
-}
-
-.bawah {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  padding: 10px;
-  background-color: #BFB6B6;
-  color: #666;
-}
-
-.copyright {
+#tagline .content p{
+  max-width: 1000px;
+  line-height: 1.5;
   text-align: center;
 }
 
-.version {
-  text-align: end;
-  position: relative;
-  bottom: -15px;
-  font-size: 7px;
-  color: #6666;
+#tagline .content li {
+  max-width: 1000px;
+  line-height: 1.5;
+}
+
+/* struktur organisasi */
+
+#struktur-organisasi {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+#struktur-organisasi .lead-info h2 {
+  font-size: 2.75em;
+}
+
+#struktur-organisasi .lead-info h3 {
+  font-weight: 400;
+}
+
+#struktur-organisasi .divisi-info h2 {
+  font-size: 2em;
+}
+
+#struktur-organisasi .divisi-info h3 {
+  font-weight: 400;
+}
+
+#struktur-organisasi .content {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#struktur-organisasi .swap {
+  flex-direction: row-reverse !important;
+  text-align: right !important;
+}
+
+#struktur-organisasi .image-lead img {
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+#struktur-organisasi .image-divisi img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+#struktur-organisasi .divisi {
+  display: flex;
+  width: 90vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
 }
